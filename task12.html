@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 400px minmax(200px, 500px);
+  gap: 1px;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: #2e8b57;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  border: 1px solid orange;
+  box-sizing: border-box;
+}
+
+/* Make last item span only first 2 columns */
+.grid-item.last {
+  grid-column: span 2;
+  height: 50px;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS Grid Sizing Exercise</h1>
+
+    <div class="grid-container">
+    <div class="grid-item">width expands to fill space</div>
+    <div class="grid-item">400px wide</div>
+    <div class="grid-item">min 200px max 500px wide</div>
+
+    <div class="grid-item">width expands to fill space</div>
+    <div class="grid-item">400px wide</div>
+    <div class="grid-item">min 200px max 500px wide</div>
+
+    <div class="grid-item">width expands to fill space</div>
+    <div class="grid-item">400px wide</div>
+    <div class="grid-item">min 200px max 500px wide</div>
+
+    <div class="grid-item last">50px high</div>
+    </div>
+
+    
+</body>
+</html>
