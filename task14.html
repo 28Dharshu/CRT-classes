@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 150px;
+            height:150px;
+            background-color: brown;
+           /* transform: translate(500px,0px);*/
+            animation-name: moveRight;
+            animation-duration: 2s ;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-delay: 2s;
+        }
+        @keyframes moveRight{
+            /* 01%*/
+                0%{
+                    transform: translate(0);
+                }
+            /*100%*/
+            /*to*/
+                50%{
+                    transform: translate(500px);
+                }
+                /*to*/
+                100%{
+                    transform: translate(0);
+                }
+                
+            }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello</h1>
+
+
+    </div>
+    
+</body>
+</html>
